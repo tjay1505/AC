@@ -31,15 +31,15 @@ function openMenu() {
 
 const ary = [
   {
-    img: "./img/handshake-3d-icon-with-check-mark.png",
+    img: "./img/8033182-min.png",
     txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusantium deleniti aspernatur praesentium sit, molestias",
   },
   {
-    img: "./img/handshake-3d-icon-with-check-mark.png",
+    img: "./img/10352168-min.png",
     txt: "Lorem ipsum dolor sit amet conser adipisicing elit. Labore accusantium deleniti aspernatur praesentium sit, molestias",
   },
   {
-    img: "./img/handshake-3d-icon-with-check-mark.png",
+    img: "./img/10511516-min.png",
     txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusantium deleniti aspernatur praesentium sit, molestias",
   },
   {
