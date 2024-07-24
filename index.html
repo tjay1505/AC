@@ -17,12 +17,20 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    
   </head>
   <body>
     <div class="container-fluid">
-      <div id="header-jk" class="row d-flex align-items-center justify-content-center ">
+      <div
+        id="header-jk"
+        class="row d-flex align-items-center justify-content-center"
+      >
         <header
-          
           class="row border d-flex align-items-center justify-content-md-around justify-content-between"
           id="jk-header-ji"
         >
@@ -69,38 +77,43 @@
 
         <div id="menubox" class="menubox">
           <div class="box">
-            <a href="#">About</a>
-            <a href="#">contact</a>
-            <a href="#">service</a>
-            <a href="#">other service</a>
-            <a href="#">policy</a>
+            <a href="#About" onclick="openMenu()" >About</a>
+            <a href="#contact"onclick="openMenu()" >contact</a>
+            <a href="#term" onclick="openMenu()">service</a>
+            <a href="#other" onclick="openMenu()">other service</a>
+            <a href="#price" onclick="openMenu()">price</a>
           </div>
         </div>
       </div>
 
-      <div id="About" class="row vw-100 vh-100 d-flex flex-column align-items-center">
-          <img src="./img/repairman-doing-air-conditioner-service.jpg" class="col-12 mt-3" alt="">
-          <h1 class="col-10 mt-3 text-center" >Ac mech Aviable in chennai At low Cost</h1>
-          <p class="col-10 mt-3 text-center" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quos odio ducimus.</p>
-          <button class="btn btn-success mt-3 rounded-5 col-10" >
-            get on a chat
-          </button>
-          <button class="btn btn-primary mt-3 rounded-5 col-10" >
-            make aa friendly call
-          </button>
+      
+      <div id="About" class="row vw-100 h-auto d-flex flex-column flex-md-row align-items-center justify-content-md-center">
+          <img src="./img/repairman-doing-air-conditioner-service.jpg" class="col-12 col-md-6 mt-3 my-md-5" alt="">
+
+          <div class="col-12 col-md-4 d-flex align-items-center justify-content-center flex-column">
+            <h1 class="col-10 mt-3 text-center" >Ac mech Aviable in chennai At low Cost</h1>
+            <p class="col-10 mt-3 text-center" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quos odio ducimus.</p>
+            <button class="btn btn-success mt-3 rounded-5 col-10" >
+              get on a chat
+            </button>
+            <button class="btn btn-primary mt-3 rounded-5 col-10" >
+              make aa friendly call
+            </button>
+          </div>
+         
       </div>
 
-      <div class="row vw-100  d-flex flex-column align-items-center" id="Ratings" >
-        <h1 class="col-12 text-center" >why US ?</h1>
+      <div class="row vw-100  d-flex flex-column flex-md-row align-items-center" id="Ratings" >
+        <h1 class="col-12 text-center mb-3" >why US ?</h1>
 
         
         
       </div>
 
       <div class="row vw-100 d-flex flex-column align-items-center">
-        <h1 class="col-12 text-center mt-3" >Pricing & Service</h1>
+        <h1 class="col-12 text-center mt-3 mt-md-5" >Pricing & Service</h1>
 
-        <table border="1px" class="col-11 text-center jk-table mt-3" >
+        <table border="1px" class="col-11 col-md-7 text-center jk-table mt-3" id="price" >
           <tr>
             <th>SERVICES</th>
           <th>PRICING</th>
@@ -161,14 +174,141 @@
 
         </table>
 
+      </div> 
+
+      <div
+        class="row d-flex flex-column flex-md-row align-items-center  justify-content-md-center justify-content-evenly text-center my-3 "
+      >
+      <h1 class="my-5" >our profession</h1>
+        <div class="col-12 col-md-3 ">
+          <h1>489 +</h1>
+          <p>happy clients</p>
+        </div>
+        <div class="col-12 col-md-3">
+          <h1>24/7</h1>
+          <p>customer care</p>
+        </div>
+        <div class="col-12 col-md-3">
+          <h1>200 +</h1>
+          <p>techicans hires</p>
+        </div>
+      </div> 
+
+      <div class="row d-flex align-items-center justify-content-center my-5" >
+        <div class="col-12 col-md-8 d-flex flex-column align-items-center ">
+          <h1 class="col-12 text-center bg-info" id="term" >Terms</h1>
+          <div class="col-12 p-2 border border-1">
+            <li class="dot mt-1" >90 days warranty for service, so we don't use spare parts provided by customer.</li>
+            <li class="dot mt-1" >Same Day Service, within 2 Hours or Less</li>
+          <li class="dot mt-1" >If you're availing the service, no inspection charge, only pay the service fee. Incase not availing the service you've got to pay the inspection charge
+          </li>
+          <li class="dot mt-1" >If you're availing the service, no inspection charge, only pay the service fee. Incase not availing the service you've got to pay the inspection charge
+          </li>
+          <li class="dot mt-1" >Service charge = labour charges + spare parts / consumable charges. If spare parts and consumables used charges will be collected along with labour charge
+          </li>
+          </div>
+      
+          </div>
+        </div>
+      </div> 
+
+      <div class="row">
+        <div class="accordion col-11 col-md-8">
+          <h1>Frequently Asked Questions</h1>
+          <div class="accordion-item">
+              <input type="checkbox" id="accordion1">
+              <label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is SEO, and why is it important for online businesses?</label>
+              <div class="accordion-item-desc">SEO, or Search Engine Optimization, is the practice of optimizing a website to improve its visibility on search engines like Google. It involves various techniques to enhance a site's ranking in search results. SEO is crucial for online businesses as it helps drive organic traffic, increases visibility, and ultimately leads to higher conversions.</div>
+          </div>
+      
+          <div class="accordion-item">
+              <input type="checkbox" id="accordion2">
+              <label for="accordion2" class="accordion-item-title"><span class="icon"></span>How long does it take to see results from SEO efforts?</label>
+              <div class="accordion-item-desc">The timeline for seeing results from SEO can vary based on several factors, such as the competitiveness of keywords, the current state of the website, and the effectiveness of the SEO strategy. Generally, it may take several weeks to months before noticeable improvements occur. However, long-term commitment to SEO is essential for sustained success.</div>
+          </div>
+      
+          <div class="accordion-item">
+              <input type="checkbox" id="accordion3">
+              <label for="accordion3" class="accordion-item-title"><span class="icon"></span>What are the key components of a successful SEO strategy?</label>
+              <div class="accordion-item-desc">A successful SEO strategy involves various components, including keyword research, on-page optimization, quality content creation, link building, technical SEO, and user experience optimization. These elements work together to improve a website's relevance and authority in the eyes of search engines.</div>
+          </div>
+      
+          <div class="accordion-item">
+              <input type="checkbox" id="accordion4">
+              <label for="accordion4" class="accordion-item-title"><span class="icon"></span>How does mobile optimization impact SEO?</label>
+              <div class="accordion-item-desc">Mobile optimization is crucial for SEO because search engines prioritize mobile-friendly websites. With the increasing use of smartphones, search engines like Google consider mobile responsiveness as a ranking factor. Websites that provide a seamless experience on mobile devices are more likely to rank higher in search results.</div>
+          </div>
+      
+          <div class="accordion-item">
+              <input type="checkbox" id="accordion5">
+              <label for="accordion5" class="accordion-item-title"><span class="icon"></span>What is the role of backlinks in SEO, and how can they be acquired?</label>
+              <div class="accordion-item-desc">Backlinks, or inbound links from other websites to yours, play a significant role in SEO. They are considered a vote of confidence and can improve a site's authority. Quality over quantity is crucial when acquiring backlinks. Strategies for obtaining backlinks include creating high-quality content, guest posting, reaching out to industry influencers, and participating in community activities. It's important to focus on natural and ethical link-building practices.</div>
+          </div>
+      
+      </div>
+      </div> 
+      <div class="row">
+        <h1 id="other" class="col-12c text-center my-3">Other services</h1>
+        <div class="col-12 d-flex my-3 flex-wrap align-items-center justify-content-center gap-2">
+          <p class="btn bg-dark-subtle col-5 col-md-3 col-xl-2" >Water Services &#10004;</p>
+          <p class="col-5 col-md-3 col-xl-2 btn bg-dark-subtle" >Water Services &#10004;</p>
+          <p class="btn bg-dark-subtle col-5 col-md-3 col-xl-2" >Water Services &#10004;</p>
+          <p class="btn bg-dark-subtle col-5 col-md-3 col-xl-2" >Water Services &#10004;</p>
+          <p class="btn bg-dark-subtle col-5 col-md-3 col-xl-2" >Water Services &#10004;</p>
+          <p class="btn bg-dark-subtle col-5 col-md-3 col-xl-2" >Water Services &#10004;</p>
+          <p class="btn bg-dark-subtle col-5 col-md-3 col-xl-2" >Water Services &#10004;</p>
+          <p class="btn bg-dark-subtle col-5 col-md-3 col-xl-2" >Water Services &#10004;</p>
+        </div>
+      </div> 
+
+      <div class="row ps-3" id="contact" >
+
+        <div class="col-12 col-md-4 d-flex align-items-start justify-content-evenly flex-column ">
+          <h1 class="my-3" >Contact</h1>
+            <p>Make a Call : +91 891235964</p>
+            <p>email : wqdhwoifhwoilf@gmail.com</p>
+            <p>location : qvwdv,vbevbe,vevchefn,1-992</p>
+        </div>
+
+        <div class="col-12 d-flex col-md-4 align-items-start flex-wrap gap-2 mt-3">
+          <h1 class="col-12" >Service area in chennai</h1>
+          <p class="btn bg-dark-subtle" >arumbakkam</p>
+          <p class="btn bg-dark-subtle" >nugakabakkam</p>
+          <p class="btn bg-dark-subtle" >chetpet</p>
+          <p class="btn bg-dark-subtle" >paris</p>
+          <p class="btn bg-dark-subtle">maduravolyal</p>
+          <p class="btn bg-dark-subtle">gundiy</p>
+          <p class="btn bg-dark-subtle">anna nagar</p>
+          <p class="btn bg-dark-subtle">kelpuak</p>
+          <p class="btn bg-dark-subtle">annavaram</p>
+          <p class="btn bg-dark-subtle">mugapair</p>
+          <p class="btn bg-dark-subtle">avadi</p>
+          <p class="btn bg-dark-subtle">kolathur</p>
+        </div>
+
+          <div class="hero col-12 col-md-3 d-flex justify-content-start">
+            <h1 class="my-3" >Social Media</h1>
+      
+            <div class="social-links">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-github"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
       </div>
 
-      <div class="vw-80 vh-100 mt-5">
-        veqwv
+      <div class="row">
+        <p class="col-12 text-center my-5 text-info" >
+          copyright claim @Tjay 2024 
+        </p>
       </div>
+
     </div>
 
-   <script src="./venila.js"></script>
+    <script src="./venila.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

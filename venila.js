@@ -19,7 +19,7 @@ function openMenu() {
   const menuOpened = menubox.classList.contains("menu-toggle");
   console.log(menuOpened ? "Menu opened" : "Menu closed");
   document.getElementById("imgmenu").src = menuOpened
-    ? "./icons/air-flow.png"
+    ? "./icons/close.png"
     : "./icons/menu (1).png";
   if (menuOpened) {
     disableScrolling();
@@ -50,9 +50,12 @@ const ary = [
 ary.map((ele) => {
   const rating = document.getElementById("Ratings");
   let newel = document.createElement("div");
+  newel.className = 'col-md-3 '
   newel.innerHTML = `<div class="col-12 mt-3 border border-2 rounded-2">
           <img class="col-12" src=${ele.img} alt="">
           <p class="col-12 text-center" >${ele.txt}</p>
         </div>`;
   rating.append(newel);
 });
+
+//==========================
