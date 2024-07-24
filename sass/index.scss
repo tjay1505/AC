@@ -23,8 +23,15 @@
         text-decoration: underline;
         color: blue;
     }
+    li {
+      a{
+        text-decoration: none ;
+        color: black  ;
+      }
+    }
 }
 body{
+  width: 100vw;
   overflow-x: hidden;
 }
 .jklogo{
@@ -69,8 +76,6 @@ body{
 }
 #header-jk{
   height:  max-content;
-  position: sticky;
-  top: 0;
   z-index: 3;
 }
 #jk-header-ji{
