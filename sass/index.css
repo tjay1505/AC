@@ -23,4 +23,79 @@
 .jkul li:hover {
   text-decoration: underline;
   color: blue;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.jklogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menubox {
+  background-color: rgb(211, 211, 211);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  transition: all 0.5s;
+  translate: -100%;
+  display: grid;
+  place-items: center;
+  display: none;
+}
+.menubox .box {
+  width: 80%;
+  height: 50%;
+  background-color: rgb(190, 189, 189);
+  border-radius: 1vmin;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menubox .box a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.menubox .box a:hover {
+  background-color: white;
+}
+
+.menu-toggle {
+  translate: 0%;
+  display: grid;
+}
+
+#header-jk {
+  height: -moz-max-content;
+  height: max-content;
+  position: sticky;
+  top: 0;
+}
+
+#jk-header-ji {
+  height: 18vmin;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 568px) {
+  #jk-header-ji {
+    height: 10vmin;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}
+.jk-table tr, .jk-table td, .jk-table th {
+  border: 1px solid rgb(210, 210, 210);
+  padding: 12px;
+}
+.jk-table th {
+  background-color: rgb(110, 187, 249);
 }/*# sourceMappingURL=index.css.map */
