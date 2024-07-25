@@ -51,8 +51,8 @@ ary.map((ele) => {
   const rating = document.getElementById("Ratings");
   let newel = document.createElement("div");
   newel.className = 'col-md-3 '
-  newel.innerHTML = `<div class="col-12 mt-3 border border-2 rounded-2">
-          <img class="col-12" src=${ele.img} alt="">
+  newel.innerHTML = `<div class="col-12 mt-3 border d-flex flex-column align-items-center border-2 rounded-2">
+          <img class="col-6" src=${ele.img} alt="">
           <p class="col-12 text-center" >${ele.txt}</p>
         </div>`;
   rating.append(newel);
