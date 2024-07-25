@@ -31,7 +31,12 @@
 
 body {
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden !important;
 }
 
 .jklogo {
@@ -282,4 +287,5 @@ h1 {
 #call-letter {
   position: fixed;
   bottom: 0;
+  z-index: 4;
 }/*# sourceMappingURL=index.css.map */
